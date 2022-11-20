@@ -6,4 +6,5 @@ firstNumer+=10;
 firstNumer-=10;
 firstNumer*=10;
 firstNumer/=10;
+firstNumer%=10;
 System.Console.WriteLine(firstNumer);
