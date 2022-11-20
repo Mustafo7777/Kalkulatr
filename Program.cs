@@ -17,28 +17,12 @@ else if (firstNumer==secondNumer)
 else {
   System.Console.WriteLine("First number is less than the second one");
 }
-switch (operations)
-{
-    case "+" :
-      System.Console.WriteLine($"{firstNumer} + {secondNumer} = {firstNumer + secondNumer}");
-      break;
-
-    case "-" :
-      System.Console.WriteLine($"{firstNumer} - {secondNumer} = {firstNumer - secondNumer}");
-      break;
-
-      case "*" :
-      System.Console.WriteLine($"{firstNumer} * {secondNumer} = {firstNumer * secondNumer}");
-      break;
-
-    case "/" :
-      System.Console.WriteLine($"{firstNumer} / {secondNumer} = {firstNumer / secondNumer}");
-      break;
-      case "%" :
-      System.Console.WriteLine($"{firstNumer} % {secondNumer} = {firstNumer % secondNumer}");
-      break;
-      default:
-        System.Console.WriteLine("Operation not found!!!");
-        break;
-    
-}
+string result = operations switch{
+  "+" => $"{firstNumer} + {secondNumer} = {firstNumer + secondNumer}",
+  "-" => $"{firstNumer} - {secondNumer} = {firstNumer - secondNumer}",
+  "*" => $"{firstNumer} * {secondNumer} = {firstNumer * secondNumer}",
+  "/" => $"{firstNumer} / {secondNumer} = {firstNumer / secondNumer}",
+  "%" => $"{firstNumer} % {secondNumer} = {firstNumer % secondNumer}",
+  _   => "Operation not found!!!"
+};
+System.Console.WriteLine(result);
