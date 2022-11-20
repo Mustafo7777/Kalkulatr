@@ -1,3 +1,4 @@
+
 ﻿using System;
 System.Console.Write("Enter the first number: ");
 int firstNumer = Convert.ToInt32(Console.ReadLine());
@@ -33,3 +34,17 @@ string result = operation switch
   _ => "Operation not found!!!"
 };
 System.Console.WriteLine(result);
+
+int thirdNumer = 1;
+while (thirdNumer<firstNumer)
+{ 
+  thirdNumer++;
+  if (thirdNumer % 2 == 0)
+  {
+   Console.WriteLine(thirdNumer);
+   
+  }
+  
+}
+
+
