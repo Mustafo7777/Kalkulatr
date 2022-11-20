@@ -2,7 +2,7 @@
 System.Console.Write("Enter the first number: ");
 int firstNumer = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Choose one operation(+,-,*,/,%):");
-string operation = Console.ReadLine();
+string operations = Console.ReadLine();
 System.Console.Write("Enter the second number: ");
 int secondNumer = Convert.ToInt32(Console.ReadLine());
 
@@ -17,7 +17,7 @@ else if (firstNumer==secondNumer)
 else {
   System.Console.WriteLine("First number is less than the second one");
 }
-switch (operation)
+switch (operations)
 {
     case "+" :
       System.Console.WriteLine($"{firstNumer} + {secondNumer} = {firstNumer + secondNumer}");
